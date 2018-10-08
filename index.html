@@ -1,0 +1,72 @@
+<html>
+<head>
+    <style>
+        body{
+            background: #F0F3F8;
+            font-family: arial;
+        }
+        .row {
+            text-align: left;
+            color: auto;
+            width: 30%;
+            vertical-align: middle;
+            margin: 10px;
+            padding: 10px;
+        }
+        #printText .row {
+            background: #FFFFFF;
+        }
+        #printText .row img {
+            width: 35px;
+            border-radius: 50px;
+            vertical-align: text-top;
+        }
+        #fullName {
+            margin-left: 10px;
+        }
+        #insertPost {
+            text-align: left;
+            padding: 5px;
+            background: #fff;
+            width: 31%;
+            height: 80px;
+            margin-left: 50%;
+            margin-bottom: 40px;
+            transform: translate(-50%, -0%);
+        }
+        #insertPost img {
+            margin-left: 10px;
+            width: 30px;
+            vertical-align: middle;
+        }
+        #postTxt > img {
+            min-width: 100%;
+            border-radius: 0;
+        }
+        #insertPost input {
+            border: 1px solid #DFE0E1;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 12px;
+            width: 330px;
+            height: 35px;
+        }
+        #like {
+            height: 20px;
+            margin-top: 15px;
+            font-size: 9px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div align="center" id="insertPost">
+        <img src="profile.gif"/>
+        <input type="text" placeholder="Whats on your mind ?"/>
+        <button type="button" onclick="loadData()">Load data</button>
+    </div>
+    
+	<div align="center" id="printText"></div>
+	<script type="text/javascript" src="externalData.js"></script>
+</body>
+</html>
